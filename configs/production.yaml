@@ -1,0 +1,21 @@
+app:
+  name: CivicPulse
+  env: production
+  debug: false
+  port: 8000
+  workers: 4
+
+database:
+  pool_size: 30
+  max_overflow: 20
+
+redis:
+  cache_ttl: 3600
+
+security:
+  cors_origins: ["https://civicpulse.go.id"]
+  rate_limit: {requests: 200, window: 60}
+
+logging:
+  level: WARNING
+  format: json
