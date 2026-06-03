@@ -1,0 +1,8 @@
+* text=auto
+*.py text diff=python
+*.yaml text
+*.yml text
+*.json text
+*.md text diff=markdown
+*.sh text eol=lf
+Dockerfile text
